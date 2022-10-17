@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# React Movie App - ReactJS Projects
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -41,30 +41,36 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
+You can learn more in the [Create React App documentation]
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+To deploy: [https://sprightly-gingersnap-4fdbc8.netlify.app/]
 
-### `npm run build` fails to minify
+API Used :[http://www.omdbapi.com/]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Generate API key from : [http://www.omdbapi.com/apikey.aspx]
+
+API INFO 
+
+Search URL:[https://www.omdbapi.com/?s={MOVIE_NAME}&apikey={API_KEY}]
+
+Movie Details URL: [https://www.omdbapi.com/?i={MOVIE_ID}&apikey={API_KEY}]
+
+Libraries used
+
+styled-components
+
+axios
+
+react-scripts
+
+## Tech Stack
+
+**Client:** HTML, CSS , react-js ,axios , styled-components
+
+## Support
+
+For support, email anshuverma2703@gmail.com 
