@@ -44,7 +44,7 @@ function MoviComponent(props) {
     console.log(props);
   return (
     <>
-      <MovieContainer>
+      <MovieContainer onClick={()=>props.onMovieSelect(props.movie.imdbID)}>
         {" "}
         <CoverImage src={props.movie.Poster}/>
         <MovieName>{props.movie.Title}</MovieName>

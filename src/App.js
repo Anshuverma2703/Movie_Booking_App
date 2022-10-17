@@ -1,5 +1,6 @@
 // import './App.css';
 import MoviComponent from "./Component/MoviComponent";
+import MovieInfoComponent from "./Component/MovieInfoComponent";
 import styled from "styled-components";
 import { useState } from "react";
 import Axios from "axios";
@@ -72,6 +73,9 @@ function App() {
   const [searchQuery, updateSearchQuery] = useState();
   const [timeoutId, updateTimeoutId] = useState();
   const[movieList , updatedMovieList] = useState([]);
+  const[selectedMovie ,updateselectedMovie ] = useState();
+
+
   const FetchData = async(searchString)=>{
     const response= await Axios.get(`https://www.omdbapi.com/?s=${searchString}&apikey=${API_KEY}`);
     console.log(response);
@@ -108,9 +112,10 @@ function App() {
             />
           </SearchBox>
         </Header>
+        {selectedMovie ? <MovieInfoComponent selectedMovie={selectedMovie} /> :null}
         <MoviListContainer>
           {
-            movieList?.length?movieList.map((movieList , index)=><MoviComponent key={index} movie={movieList}/>):"NO Movie Search"
+            movieList?.length?movieList.map((movieList , index)=><MoviComponent key={index} movie={movieList} onMovieSelect={updateselectedMovie} />):"NO Movie Search"
           }
           {/* <MoviComponent /> */}
           
