@@ -69,6 +69,13 @@ const MoviListContainer = styled.div`
   justify-content: space-evenly;
 `;
 
+const Placeholder = styled.img`
+width:120px;
+height:120px;
+margin:150px;
+opacity:50%;
+`
+
 function App() {
   const [searchQuery, updateSearchQuery] = useState();
   const [timeoutId, updateTimeoutId] = useState();
@@ -112,10 +119,10 @@ function App() {
             />
           </SearchBox>
         </Header>
-        {selectedMovie ? <MovieInfoComponent selectedMovie={selectedMovie} /> :null}
+        {selectedMovie ? <MovieInfoComponent selectedMovie={selectedMovie} onMovieSelect={updateselectedMovie} /> :null}
         <MoviListContainer>
           {
-            movieList?.length?movieList.map((movieList , index)=><MoviComponent key={index} movie={movieList} onMovieSelect={updateselectedMovie} />):"NO Movie Search"
+            movieList?.length?movieList.map((movieList , index)=><MoviComponent key={index} movie={movieList} onMovieSelect={updateselectedMovie} />): <Placeholder src="/movie-icon.svg" />
           }
           {/* <MoviComponent /> */}
           
