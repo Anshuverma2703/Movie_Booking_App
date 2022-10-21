@@ -2,7 +2,7 @@
 import MoviComponent from "./Component/MoviComponent";
 import MovieInfoComponent from "./Component/MovieInfoComponent";
 import styled from "styled-components";
-import { useState } from "react";
+import { useState ,useEffect} from "react";
 import Axios from "axios";
 const API_KEY = '3746563d';
 const Container = styled.div`
@@ -102,13 +102,19 @@ function App() {
     updateTimeoutId(timeout);
   };
 
+
+  useEffect(()=>{
+    FetchData('anime');
+  },[])
+
+
   return (
     <>
       <Container>
         <Header>
           <AppName>
             <MovieImage src="/movie-icon.svg" />
-            React Movie App
+            Movie App
           </AppName>
           <SearchBox>
             <SearchIcon src="/search-icon.svg" />
