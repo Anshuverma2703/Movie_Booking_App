@@ -47,7 +47,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### Deployment
 
-To deploy: [https://sprightly-gingersnap-4fdbc8.netlify.app/]
+To deploy: [https://delicate-kataifi-8efa23.netlify.app/]
 
 API Used :[http://www.omdbapi.com/]
 
